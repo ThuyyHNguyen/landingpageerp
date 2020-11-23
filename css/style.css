@@ -275,7 +275,7 @@ a.btn {
 }
 
 #hero .btn-get-started:hover {
-  background: #209dd8;
+  background: #000;
 }
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -381,10 +381,12 @@ a.btn {
 }
 #about .content h3 {
   margin-left: 50px;
+  margin-bottom: 30px;
+  max-width: 500px;
   color: #363740;
-  font-weight: 1000;
-  font-size: 18px;
-  line-height: 26px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: auto;
 }
 #about .content span {
   font-size: 20px;
@@ -394,18 +396,28 @@ a.btn {
   margin-left:50px;
 }
 #about .content p {
+  font-size: 18px;
+  margin-bottom: 10px;
   margin-left:50px;
   color: #363740;
   line-height: 26px;
 }
 .about .btn{
   margin-left: 50px;
-  border-radius: 10px;
+  margin-top: 20px;
+  border-radius: 50px;
   background-color: #109CF1;
+  padding: 20px 40px 20px 40px;
+}
+.about .btn:hover{
+  background-color: #fff;
+  color:#109CF1;
+  border:1px solid #109CF1;
 }
 #object{
   margin-top: 10px;
 }
+
 @media (max-width: 768px) {
   #about {
   margin-top: 0px;
