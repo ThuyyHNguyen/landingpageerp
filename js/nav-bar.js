@@ -27,13 +27,13 @@ function navLinkClick() {
   }
 }
 
-// slider function
+// slider function doi tac
 $(document).ready(function(){
       $('.customer-logos').slick({
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         arrows: false,
         dots: false,
           pauseOnHover: false,
@@ -50,6 +50,8 @@ $(document).ready(function(){
         }]
       });
     });
+
+// AOS animate function start
 $(function() {
   AOS.init();
 });
