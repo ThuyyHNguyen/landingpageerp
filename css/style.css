@@ -12,6 +12,9 @@ body{
   display: flex;
   align-items: center;
 }
+.navbar-area img{
+  width: 50%;
+}
 a.site-logo {
   margin-left:-50px;
   font-size: 26px;
@@ -29,12 +32,27 @@ a.btn {
   margin-bottom: 5px;
   border-radius: 50px; 
 }
-#signup{
-  background-color: #fff;
-  color: #109CF1;
+#normal-button{
+  background-color: transparent;
+}
+#normal-button:hover{
+  color: #363740;
 }
 #signin{
   border: 1px solid rgb(255,255,255,1);
+  color:#fff;
+}
+#signin:hover{
+  background-color: #109CF1;
+  color:#fff;
+  border:transparent;
+}
+#signup{
+  background-color: #fff;
+  color:#109CF1;
+}
+#signup:hover{
+  background-color: #109CF1;
   color:#fff;
 }
 .site-navbar ul {
@@ -161,6 +179,12 @@ a.btn {
   .intro-area h2 {
     font-size: 36px;
     margin-bottom: 15px;
+  }
+  #normal-button{
+    margin:auto;
+    margin-top: 10px;
+    display: inline-block;
+    transition: 0.5s;
   }  
   #signup {
     margin:auto;
@@ -492,6 +516,10 @@ a.btn {
 #package h2{
   font-weight: 1000;
 }
+#package .img-bg {
+  margin-left: -500px;
+}
+/* slide */
 .carousel-item p{
   margin-left: 20px; 
   margin-bottom: 20px;
@@ -612,6 +640,10 @@ a.btn {
 .doi-tac{
   margin-top:100px;
   margin-bottom: 100px;
+}
+.doi-tac h2{
+  font-weight: 800;
+  margin-bottom: 50px;
 }
 /* Slider */
 
@@ -744,11 +776,16 @@ a.btn {
 .slick-slide img {
     width: 80%;
 }
+.doi-tac h2{
+  margin-bottom: 0;
 }
+}
+
 .section-title {
   text-align: center;
   padding-bottom: 30px;
 }
+
 
 
 /* Pricing Section
@@ -1008,23 +1045,7 @@ a.btn {
   color: #444444;
 }
 
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #1977cc;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .social-links a:hover {
-  background: #1c84e3;
-  color: #fff;
-  text-decoration: none;
+#footer img{
+  width: 50%;
+  margin-bottom: 20px;
 }
