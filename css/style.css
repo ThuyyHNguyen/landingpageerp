@@ -589,10 +589,12 @@ a.btn {
   background-size: cover;
 }
 .detail .content h2 {
+  color:#363740;
   margin-top: 300px;
   padding-top: 100px;
   font-weight: 600;
   font-size: 26px;
+  margin-bottom: 30px;
 }
 .detail img{
   margin-top:200px;
@@ -606,6 +608,7 @@ a.btn {
 
 .detail .content p:last-child {
   margin-bottom: 0;
+  color: #363740;
 }
 @media (max-width: 768px) {
 .detail{
@@ -644,6 +647,7 @@ a.btn {
 .doi-tac h2{
   font-weight: 800;
   margin-bottom: 50px;
+  color: #109CF1;
 }
 /* Slider */
 
