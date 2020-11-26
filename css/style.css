@@ -1,5 +1,5 @@
 body{
-  font-family: 'Mulish';
+  font-family: 'Roboto', sans-serif;
 }
 
 /* navbar regular css start */
@@ -101,8 +101,17 @@ background-color: transparent;
   transform: translateY(-3px) rotate(-45deg);
 }
 /* nav-toggler css start */
-
-
+@media screen and (max-width: 1024px) {
+  a.site-logo {
+    margin-left:0px;
+  }
+  .navbar-area img{
+    width: 100%;
+  }
+  .site-navbar a{
+    font-size: 12px;
+  }
+}
 /* mobile breakpoint start */
 @media screen and (max-width: 768px) {
   a.site-logo {
@@ -122,15 +131,16 @@ background-color: transparent;
     min-height: 60px;
   }
   .site-navbar ul {
+    margin-top: 10px;
     position: absolute;
     width: 100%;
-    height: calc(100vh - 60px);
+    height: 100%;
     left: 0;
     top: 60px;
     flex-direction: column;
     align-items: center;
     border-top: 1px transparent #fff;
-    background-color: rgba(0,0,0,0.5);
+    background-color: #109CF1;
     max-height: 0;
     overflow: hidden;
     transition: .3s;
@@ -232,7 +242,14 @@ background-color: transparent;
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
-
+@media (max-width: 1024px) {
+  #hero h1{
+    margin-left:10px;
+  }
+  #hero h2{
+    margin-left:10px;
+  }
+}
 @media (max-width: 991px) {
   #hero {
     margin-bottom: 0px;
@@ -456,7 +473,6 @@ background-color: transparent;
   padding-left: 0px;
 }
 #package .btn {
-  margin-top:15px;
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -472,7 +488,6 @@ background-color: transparent;
   font-weight: bold;
 }
 #package hr{
-  margin-top:35px;
   background-color: #109CF1;
   border: 3px solid #109CF1;
 }
@@ -480,7 +495,7 @@ background-color: transparent;
   font-size: 14px;
   font-weight: 300;
   text-align: left;
-  margin-top:30px;
+  margin-top:10px;
 }
 #package h2{
   font-weight: 1000;
@@ -578,6 +593,11 @@ background-color: transparent;
 .detail .content p:last-child {
   margin-bottom: 0;
   color: #363740;
+}
+@media (max-width: 1024px) {
+  .detail img{
+  margin-top:300px;
+  }
 }
 @media (max-width: 768px) {
 .detail{
@@ -774,13 +794,27 @@ background-color: transparent;
   color: #ffffff;
   margin-bottom: 50px;
 }
+#pricing span{
+  color: #109CF1;
+}
 
 @media (max-width: 768px) {
   #pricing {
     padding-bottom: 30px;
   }
+  #pricing .card h3 {
+    font-size: 64px;
+  }
+  #pricing .card {
+    max-width: 60%;
+    margin: auto;
+  }
 }
-
+@media (max-width: 415px) {
+  #pricing .card {
+    max-width: 100%;
+  }
+}
 #pricing .card {
   border: 0;
   border-radius: 0px;
